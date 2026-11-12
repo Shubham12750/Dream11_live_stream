@@ -1,0 +1,24 @@
+{
+  "name": "dream11-live",
+  "version": "1.0.0",
+  "author": "Shubham <bshubhamas@gmail.com> (https://github.com/Shubham12750)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shubham12750/dream11-live.git"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --parallel --filter server --filter web dev",
+    "typecheck": "pnpm -r typecheck",
+    "db:migrate": "pnpm --filter server db:migrate",
+    "db:seed": "pnpm --filter server db:seed",
+    "replay": "pnpm --filter server replay",
+    "build": "pnpm --filter web build",
+    "start": "pnpm --filter server start"
+  },
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=22"
+  }
+}
